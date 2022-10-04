@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="LocationTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2022-05-01T18:14:50" hostname="OMEN" time="0.005">
+  <properties/>
+  <testcase name="equals_shouldReturnTrue_whenComparingLocationsWithSameXY()" classname="LocationTest" time="0.001"/>
+  <testcase name="getXgetY_shouldReturnCorrectValues_afterLocationIsCreated()" classname="LocationTest" time="0.001"/>
+  <testcase name="cloning_shouldReturnTrue_whenComparingLocationsWithSameXY()" classname="LocationTest" time="0.001"/>
+  <testcase name="setXsetYgetXgetY_shouldReturnCorrectValues_afterLocationIsModified()" classname="LocationTest" time="0.001"/>
+  <system-out><![CDATA[Location test: check that two Locaiton objects containing same coordinates compare as equal
+	Testing for Locations model.Location@71f1d9a2(x=1,y=1) and model.Location@71f1d9a2(x=1,y=1): expected equality = true , returned equality = true)
+	Testing for Locations model.Location@71f1d9a2(x=1,y=1) and model.Location@2b0d086b(x=1,y=1): expected equality = true , returned equality = true)
+	Testing for Locations model.Location@1dfbc206(x=-1,y=-1) and model.Location@2b0d086b(x=1,y=1): expected equality = false , returned equality = false)
+	Testing for Locations model.Location@71f1d9a2(x=1,y=1) and model.Location@1dfbc206(x=-1,y=-1): expected equality = false , returned equality = false)
+	Testing for Locations model.Location@71f1d9a2(x=1,y=1) and null: expected equality = false , returned equality = false)
+Location test: check that the values given to Location(x,y) constructor are returned correctly by getX() and getY()
+	Testing for Location(2147483647,-2147483648): getX() = 2147483647, getY() = -2147483648)
+	Testing for Location(-2147483648,2147483647): getX() = -2147483648, getY() = 2147483647)
+	Testing for Location(0,0): getX() = 0, getY() = 0)
+	Testing for Location(11,9): getX() = 11, getY() = 9)
+Location test: check that Location object constructed from another location object has the same coordinates
+	Testing for Location model.Location@15942d03(x=1,y=2), returned Location = model.Location@563c3645(x=1,y=2))
+Location test: check that the values given to Location(x,y) constructor are returned correctly by getX() and getY()
+	Testing for Location(2147483647,-2147483648): getX() = 2147483647, getY() = -2147483648)
+	Testing for Location(-2147483648,2147483647): getX() = -2147483648, getY() = 2147483647)
+	Testing for Location(0,0): getX() = 0, getY() = 0)
+	Testing for Location(11,9): getX() = 11, getY() = 9)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

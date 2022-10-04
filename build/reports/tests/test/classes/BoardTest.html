@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class BoardTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class BoardTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/default-package.html">default-package</a> &gt; BoardTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">5</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.058s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">defaultContrustor_shouldProduceEmptyBoard()</td>
+<td class="success">0.021s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">equals_returnsCorrectResult_whenComparingTwoBoards()</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">makeMove_shouldUpdateBoardCorrectly_whenFirstMoveIsGiven()</td>
+<td class="success">0.005s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">makeMove_shouldUpdateBoardCorrectly_whenSecondAndSubsequentMoveIsGiven()</td>
+<td class="success">0.018s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">playerHasMoves_shouldReturnCorrectValues_whenGivenMidGameAndEndgameBoards()</td>
+<td class="success">0.011s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>Board test: default constructor should produce empty board
+	Testing newly created board for emptiness ...
+	. . . . . . . . . . . . . . 
+	. . . . . . . . . . . . . . 
+	. . . . . . . . . . . . . . 
+	. . . . . . . . . . . . . . 
+	. . . . . . . . . . . . . . 
+	. . . . . . . . . . . . . . 
+	. . . . . . . . . . . . . . 
+	. . . . . . . . . . . . . . 
+	. . . . . . . . . . . . . . 
+	. . . . . . . . . . . . . . 
+	. . . . . . . . . . . . . . 
+	. . . . . . . . . . . . . . 
+	. . . . . . . . . . . . . . 
+	. . . . . . . . . . . . . . 
+	Testing newly created board for number of players = 2 
+Board test: checking that Board correctly reacts to valid and invalid moves
+	Testing move model.Move@61883c9b(player=0,location=model.Location@c7ae940(x=6,y=8),gamepiece=model.Gamepiece@61a5f672(Locations =[model.Location@3dfb2fdb(x=0,y=0), model.Location@da268c0(x=0,y=-1), model.Location@7cc92bdc(x=-1,y=-1), model.Location@32115451(x=1,y=0), model.Location@5670303f(x=2,y=0)],playerNo=0))  against board: model.Board@5594713e
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . X . . . . . . . . . 
+. . . . X X . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+, returnedResult = true, resultantBoard = model.Board@5594713e
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . X . . . . . . . . . 
+. . . . X X . . . . . . . . 
+. . . . . . X X X . . . . . 
+. . . . . X X . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+	Testing move model.Move@5cecde66(player=0,location=model.Location@4b4578dd(x=-1,y=4),gamepiece=model.Gamepiece@2dcb9c94(Locations =[model.Location@5ba00592(x=0,y=0), model.Location@6185ff6e(x=0,y=1), model.Location@1e6e013(x=0,y=2), model.Location@70b8e387(x=1,y=0)],playerNo=0))  against board: model.Board@2b6fe497
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+, returnedResult = false, resultantBoard = model.Board@2b6fe497
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+	Testing move model.Move@655f001b(player=1,location=model.Location@530f82db(x=10,y=2),gamepiece=model.Gamepiece@649cf7e6(Locations =[model.Location@3003ecbe(x=0,y=0), model.Location@2d417d7d(x=-1,y=0), model.Location@2772b54(x=-1,y=-1), model.Location@1d7df3b(x=0,y=1), model.Location@2e1ea5a3(x=1,y=1)],playerNo=1))  against board: model.Board@8128f88
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . O . . . . 
+. . . . . . . . . O . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+, returnedResult = true, resultantBoard = model.Board@8128f88
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . O . . . . 
+. . . . . . . . . O . . . . 
+. . . . . . . . . . O O . . 
+. . . . . . . . . O O . . . 
+. . . . . . . . . O . . . . 
+. . . . . . . . . . . . . . 
+	Testing move model.Move@33042855(player=1,location=model.Location@c950709(x=4,y=10),gamepiece=model.Gamepiece@57fd9885(Locations =[model.Location@4b0f233d(x=0,y=0), model.Location@595bec89(x=0,y=1), model.Location@7dd205e4(x=1,y=0)],playerNo=1))  against board: model.Board@46d0836b
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . X X . . . . . . . . 
+. . . . X . . . . . . . . . 
+. . . . X . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+, returnedResult = false, resultantBoard = model.Board@46d0836b
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . X X . . . . . . . . 
+. . . . X . . . . . . . . . 
+. . . . X . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+	Testing move model.Move@74f45647(player=1,location=model.Location@724dc3f4(x=9,y=5),gamepiece=model.Gamepiece@1f5d057c(Locations =[model.Location@5d541627(x=0,y=0), model.Location@bc425a4(x=0,y=1), model.Location@170a154b(x=1,y=0)],playerNo=1))  against board: model.Board@608b9433
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . X X . . . . . . . . 
+. . . . X . . . . . . . . . 
+. . . . X . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . O . . . . 
+. . . . . . . . . O . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+, returnedResult = false, resultantBoard = model.Board@608b9433
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . X X . . . . . . . . 
+. . . . X . . . . . . . . . 
+. . . . X . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . O . . . . 
+. . . . . . . . . O . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+Board test: checking that equals works correctly
+	Testing board model.Board@37d0bc28
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+ against model.Board@37d0bc28
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+, expected equality = true
+	Testing board model.Board@37d0bc28
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+ against model.Board@70b757d4
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+, expected equality = true
+	Testing board model.Board@37d0bc28
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+ against model.Board@4ca16ffd
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . X . . . . . . . . 
+. . . . . X X . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . O . . . 
+. . . . . . . . . . O . . . 
+. . . . . . . . . . O . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+, expected equality = false
+	Testing board model.Board@37d0bc28
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+ against a string, expected equality = false
+Board test: checking that Board correctly reacts to valid and invalid moves
+	Testing move model.Move@792f33e8(player=0,location=model.Location@336cd2ee(x=4,y=9),gamepiece=model.Gamepiece@74759df9(Locations =[model.Location@584f3a81(x=0,y=0), model.Location@587ff213(x=0,y=1), model.Location@d51b050(x=1,y=0)],playerNo=0))  against board: model.Board@55137e56
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+, returnedResult = true, resultantBoard = model.Board@55137e56
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . X . . . . . . . . . 
+. . . . X X . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+	Testing move model.Move@74a9cd47(player=0,location=model.Location@536156ab(x=-1,y=4),gamepiece=model.Gamepiece@5332afa7(Locations =[model.Location@1d9d8a59(x=0,y=0), model.Location@27e4bf58(x=0,y=1), model.Location@7ee97101(x=0,y=2)],playerNo=0))  against board: model.Board@3860a6ec
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+, returnedResult = false, resultantBoard = model.Board@3860a6ec
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+	Testing move model.Move@495e3cfb(player=1,location=model.Location@4bc254f7(x=9,y=4),gamepiece=model.Gamepiece@7e9655f7(Locations =[model.Location@437cdb0f(x=0,y=0), model.Location@7b7d8e7f(x=0,y=1)],playerNo=1))  against board: model.Board@22c1180b
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+, returnedResult = true, resultantBoard = model.Board@22c1180b
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . O . . . . 
+. . . . . . . . . O . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+	Testing move model.Move@6eb4c849(player=1,location=model.Location@4bb5c233(x=3,y=9),gamepiece=model.Gamepiece@5caca34c(Locations =[model.Location@7687f992(x=0,y=0)],playerNo=1))  against board: model.Board@3eb9918b
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+, returnedResult = false, resultantBoard = model.Board@3eb9918b
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+Board test: checking that playerHasMoves() correctly analyses given board configurations
+	Checking whether player 0 has moves on board model.Board@627716d5
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . X X . . . . . . . . 
+. . . . X . . . . . . . . . 
+. . . . X . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . O . . . . 
+. . . . . . . . . O . . . . 
+. . . . . . . . . O . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+: playerHasMoves() = true
+	Checking whether player 1 has moves on board model.Board@627716d5
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . X X . . . . . . . . 
+. . . . X . . . . . . . . . 
+. . . . X . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . O . . . . 
+. . . . . . . . . O . . . . 
+. . . . . . . . . O . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . 
+: playerHasMoves() = true
+	Checking whether player 0 has moves on board model.Board@2bf52860
+X X O O O O X O . . O O . O 
+X X O X X X X O X O O X O O 
+O O X . O O O X X X O X O . 
+O X X X O O X O O O X O X O 
+O O X O X X X O X X X O X O 
+X . O O . . X O X O . O X O 
+X O O . X X O . O O . O X . 
+X . X X X O O O . O . O X . 
+X O O O O X O . O X X X O O 
+O X O X X X . X O O O X O O 
+O X X O O O X X . . O X . . 
+O . X X . O O X X O X O X X 
+O X O O O X X . . O . O O X 
+X X X X O X X X O O O . X X 
+: playerHasMoves() = false
+	Checking whether player 1 has moves on board model.Board@2bf52860
+X X O O O O X O . . O O . O 
+X X O X X X X O X O O X O O 
+O O X . O O O X X X O X O . 
+O X X X O O X O O O X O X O 
+O O X O X X X O X X X O X O 
+X . O O . . X O X O . O X O 
+X O O . X X O . O O . O X . 
+X . X X X O O O . O . O X . 
+X O O O O X O . O X X X O O 
+O X O X X X . X O O O X O O 
+O X X O O O X X . . O X . . 
+O . X X . O O X X O X O X X 
+O X O O O X X . . O . O O X 
+X X X X O X X X O O O . X X 
+: playerHasMoves() = true
+	Checking whether player 0 has moves on board model.Board@5932d15c
+X X O O O O X O . . O O . O 
+X X O X X X X O X O O X O O 
+O O X . O O O X X X O X O . 
+O X X X O O X O O O X O X O 
+O O X O X X X O X X X O X O 
+X . O O . . X O X O . O X O 
+X O O . X X O . O O . O X . 
+X . X X X O O O . O . O X . 
+X O O O O X O . O X X X O O 
+O X O X X X . X O O O X O O 
+O X X O O O X X . . O X . . 
+O . X X . O O X X O X O X X 
+O X O O O X X O . O . O O X 
+X X X X O X X X O O O . X X 
+: playerHasMoves() = false
+	Checking whether player 1 has moves on board model.Board@5932d15c
+X X O O O O X O . . O O . O 
+X X O X X X X O X O O X O O 
+O O X . O O O X X X O X O . 
+O X X X O O X O O O X O X O 
+O O X O X X X O X X X O X O 
+X . O O . . X O X O . O X O 
+X O O . X X O . O O . O X . 
+X . X X X O O O . O . O X . 
+X O O O O X O . O X X X O O 
+O X O X X X . X O O O X O O 
+O X X O O O X X . . O X . . 
+O . X X . O O X X O X O X X 
+O X O O O X X O . O . O O X 
+X X X X O X X X O O O . X X 
+: playerHasMoves() = false
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.1</a> at 01-May-2022, 7:14:50 pm</p>
+</div>
+</div>
+</body>
+</html>
